@@ -23,10 +23,10 @@ public class codelab1 {
         int tahunLahir = scanner.nextInt();
 
 
-        int currentYear = Year.now().getValue();
+        int tahunIni = Year.now().getValue();
 
 
-        int umur = currentYear - tahunLahir;
+        int umur = tahunIni - tahunLahir;
 
 
         System.out.println("\nData Diri:");
