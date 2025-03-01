@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
 public class tugas1 {
+    //for admin login
     public void loginAdmin(){
         Scanner loginMin = new Scanner(System.in);
 
         String userbenar = "admin506";
         String passbenar = "pass506";
-        boolean berhasiltidak = false;
+        boolean berhasiltidak = false;//decide to run loop in case wrong user&pass
 
         while(!berhasiltidak) {
             System.out.print("Masukan username: ");
@@ -26,14 +27,15 @@ public class tugas1 {
 
         loginMin.close();
     }
+    // for mahasiswa login
     public void loginMhs() {
         Scanner loginMhs = new Scanner(System.in);
 
         String userbenar = "OVAN KEYVA KUSUMADEWA";
         String passbenar = "202410370110506";
-        boolean berhasiltidak = false;
+        boolean benartidak = false;
 
-        while(!berhasiltidak) {
+        while(!benartidak) {
             System.out.print("Masukan username: ");
             String username = loginMhs.nextLine();
 
@@ -42,7 +44,7 @@ public class tugas1 {
 
             if (userbenar.equals(username) && passbenar.equals(password)) {
                 System.out.println("Login berhasil!!");
-                berhasiltidak = true;
+                benartidak = true;
             } else {
                 System.out.println("Username atau password salah!!");
                 System.out.println("Mohon coba lagi");
@@ -51,7 +53,7 @@ public class tugas1 {
 
         loginMhs.close();
     }
-
+// main code
     public static void main(String[] args) {
         Scanner pilih = new Scanner(System.in);
 
