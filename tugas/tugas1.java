@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class tugas1 {
     //for admin login
-    public void loginAdmin(){
+    public static void loginAdmin(){
         Scanner loginMin = new Scanner(System.in);
 
         String userbenar = "admin506";
         String passbenar = "pass506";
-        boolean berhasiltidak = false;//decide to run loop in case wrong user&pass
+        boolean berhasiltidak = true;//decide to run loop in case wrong user&pass
 
-        while(!berhasiltidak) {
+        while(berhasiltidak) {
             System.out.print("Masukan username: ");
             String username = loginMin.nextLine();
 
@@ -18,7 +18,7 @@ public class tugas1 {
 
             if (userbenar.equals(username) && passbenar.equals(password)) {
                 System.out.println("Login berhasil!!");
-                berhasiltidak = true;
+                berhasiltidak = false;
             } else {
                 System.out.println("Username atau password salah!!");
                 System.out.println("Mohon coba lagi");
@@ -28,15 +28,15 @@ public class tugas1 {
         loginMin.close();
     }
     // for mahasiswa login
-    public void loginMhs() {
+    public static void loginMhs() {
         Scanner loginMhs = new Scanner(System.in);
 
         String userbenar = "OVAN KEYVA KUSUMADEWA";
         String passbenar = "202410370110506";
-        boolean benartidak = false;
+        boolean benartidak = true;
 
-        while(!benartidak) {
-            System.out.print("Masukan username: ");
+        while(benartidak) {
+            System.out.print("Masuka username: ");
             String username = loginMhs.nextLine();
 
             System.out.print("Masukan password: ");
@@ -44,7 +44,7 @@ public class tugas1 {
 
             if (userbenar.equals(username) && passbenar.equals(password)) {
                 System.out.println("Login berhasil!!");
-                benartidak = true;
+                benartidak = false;
             } else {
                 System.out.println("Username atau password salah!!");
                 System.out.println("Mohon coba lagi");
@@ -64,14 +64,13 @@ public class tugas1 {
 
         int pilihan = pilih.nextInt();
 
-        tugas1 myTugas1 = new tugas1();
 
         switch(pilihan) {
             case 1:
-                myTugas1.loginAdmin();
+                tugas1.loginAdmin();
                 break;
             case 2:
-                myTugas1.loginMhs();
+                tugas1.loginMhs();
                 break;
             default:
                 System.out.println("Pilihan tidak valid");
