@@ -36,7 +36,7 @@ public class tugas1 {
         boolean benartidak = true;
 
         while(benartidak) {
-            System.out.print("Masuka username: ");
+            System.out.print("Masukan username: ");
             String username = loginMhs.nextLine();
 
             System.out.print("Masukan password: ");
