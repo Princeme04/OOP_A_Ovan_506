@@ -13,7 +13,7 @@ public class codelab1m2 {
         String type2 = "Mammal";
         String Suara2 = "Woof-woof!!";
 
-        System.out.println("Name: "+ hewan2);
+        System.out.println("\nName: "+ hewan2);
         System.out.println("Type: "+ type2);
         System.out.println("Sound: "+ Suara2);
     }
