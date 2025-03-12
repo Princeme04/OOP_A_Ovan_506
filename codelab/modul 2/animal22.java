@@ -1,21 +1,16 @@
 public class animal22 {
-    public void animal2(){
-        String hewan2 = "Dog";
-        String type2 = "Mammal";
-        String Suara2 = "Woof-woof!!";
-
-        System.out.println("\nName: "+ hewan2);
-        System.out.println("Type: "+ type2);
-        System.out.println("Sound: "+ Suara2);
-}
-    public void animal1(){
-        String hewan1 = "Cat";
-        String type1 = "Mammal";
-        String suara1 = "Nyann~~";
-
-        System.out.println("\nName:"+ hewan1);
-        System.out.println("Type: "+ type1);
-        System.out.println("Sound: "+ suara1);
+    String hewan;
+    String type;
+    String suara;
+    public animal22(String hewan, String type, String suara){
+        this.hewan = hewan;
+        this.type = type;
+        this.suara = suara;
+    }
+    public void displayInfo() {
+        System.out.println("Name: "+ hewan);
+        System.out.println("Type: "+ type);
+        System.out.println("Sound: "+ suara);
     }
 }
 
