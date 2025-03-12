@@ -14,7 +14,7 @@ public class codelab2m2 {
         // Display initial information for account2
         account2.displayInfo();
         // Deposit into account2
-        account2.deposit(4004);
+        account2.deposit(4411);
         // Withdraw from account2
         account2.withdraw(400);
     }
