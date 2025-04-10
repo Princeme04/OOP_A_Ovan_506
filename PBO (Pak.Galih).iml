@@ -8,6 +8,9 @@
       <sourceFolder url="file://$MODULE_DIR$/tugas" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/codelab/modul 2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/codelab/modul 3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tugas/modul 1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tugas/modul 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tugas/modul 3" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
