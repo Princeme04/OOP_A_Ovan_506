@@ -4,8 +4,8 @@ public class Admin {
     public static void loginAdmin() {
         Scanner loginMin = new Scanner(System.in);
 
-        String userbenar = "admin506";
-        String passbenar = "pass506";
+        String userBenar = "admin506";
+        String passBenar = "pass506";
         boolean berhasiltidak = true;
 
         while (berhasiltidak) {
@@ -15,7 +15,7 @@ public class Admin {
             System.out.print("Masukan password: ");
             String password = loginMin.nextLine();
 
-            if (userbenar.equals(username) && passbenar.equals(password)) {
+            if (userBenar.equals(username) && passBenar.equals(password)) {
                 System.out.println("Login berhasil!!");
                 berhasiltidak = false;
             } else {

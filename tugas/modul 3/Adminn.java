@@ -1,16 +1,22 @@
-public class Admin extends User {
+public class Adminn extends User {
     private String username;
     private String password;
 
-    public Admin(String name, String studentID, String username, String password){
+    public Adminn(String name, String studentID, String username, String password){
         super(name, studentID);
         this.username = username;
         this.password = password;
     }
     @Override
     public void login(){
-        if("admin".equals(username) && "1234".equals(password)){
-            System.out.println("Admin login successful.");
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        System.out.print("Enter username: ");
+        String inputUsername = scanner.nextLine();
+        System.out.print("Enter password: ");
+        String inputPassword = scanner.nextLine();
+
+        if(inputUsername.equals(username) && inputPassword.equals(password)){
+            displayInfo();
         }else{
             System.out.println("Admin login failed. Invalid username or password");
         }

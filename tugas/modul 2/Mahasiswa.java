@@ -6,9 +6,9 @@ public class Mahasiswa {
 
         String userbenar = "OVAN KEYVA KUSUMADEWA";
         String passbenar = "202410370110506";
-        boolean benartidak = true;
+        boolean benarTidak = true;
 
-        while (benartidak) {
+        while (benarTidak) {
             System.out.print("Masukan username: ");
             String username = loginMhs.nextLine();
 
@@ -17,7 +17,7 @@ public class Mahasiswa {
 
             if (userbenar.equals(username) && passbenar.equals(password)) {
                 System.out.println("Login berhasil!!");
-                benartidak = false;
+                benarTidak = false;
             } else {
                 System.out.println("Username atau password salah!!");
                 System.out.println("Mohon coba lagi");
