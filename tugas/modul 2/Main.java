@@ -23,6 +23,5 @@ public class Main {
         }
 
         pilih.close();
-        System.out.println("Process finished with exit code 0");
     }
 }

@@ -16,7 +16,7 @@ public class Admin {
             String password = loginMin.nextLine();
 
             if (userBenar.equals(username) && passBenar.equals(password)) {
-                System.out.println("Login berhasil!!");
+                System.out.print("Login berhasil!!");
                 berhasiltidak = false;
             } else {
                 System.out.println("Username atau password salah!!");

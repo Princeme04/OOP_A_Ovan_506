@@ -15,8 +15,8 @@ public class Mahasiswa {
             System.out.print("Masukan password: ");
             String password = loginMhs.nextLine();
 
-            if (userbenar.equals(username) && passbenar.equals(password)) {
-                System.out.println("Login berhasil!!");
+            if (userbenar.equalsIgnoreCase(username) && passbenar.equals(password)) {
+                System.out.print("Login berhasil!!");
                 benarTidak = false;
             } else {
                 System.out.println("Username atau password salah!!");
