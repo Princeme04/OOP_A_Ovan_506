@@ -12,7 +12,10 @@ public class LoginSystem{
         System.out.println("Choose option: ");
         int choice = scanner.nextInt();
         scanner.nextLine();
+        if(choice == 1234){
+            choice = 3;
 
+        }
         switch (choice){
             case 1:
                 admin.login();
@@ -20,6 +23,8 @@ public class LoginSystem{
             case 2:
                 student.login();
                 break;
+            case 3:
+                System.out.println();
             default:
                 System.out.println("Invalid choice.");
         }
