@@ -7,10 +7,10 @@ public class Student extends User{
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         System.out.print("Enter name: ");
         String inputName = scanner.nextLine();
-        System.out.print("Enten student ID: ");
+        System.out.print("Enter student ID: ");
         String inputID = scanner.nextLine();
 
-        if(inputName.equals(getName()) && inputID.equals(getStudentID())){
+        if(inputName.equalsIgnoreCase(getName()) && inputID.equalsIgnoreCase(getStudentID())){
             displayInfo();
         }else{
             System.out.println("Login failed! Invalid name or student ID.");
@@ -18,6 +18,9 @@ public class Student extends User{
     }
     @Override
     public void displayInfo(){
+        System.out.println("Name: " + getName());
+        System.out.println("Student ID: " + getStudentID());
         System.out.println("Student " + getName() + " has successfuly logged in.");
+
     }
 }

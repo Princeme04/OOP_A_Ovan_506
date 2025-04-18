@@ -1,6 +1,6 @@
 public class User {
-    private String name;
-    private String studentID;
+    private final String name;
+    private final String studentID;
 
     public User(String name, String studentID){
         this.name = name;
@@ -9,15 +9,11 @@ public class User {
     public String getName(){
         return name;
     }
-    public void setName(String name){
-        this.name = name;
-    }
+
     public String getStudentID(){
-        return name = name;
+        return studentID;
     }
-    public void getStudentID(String studentID){
-        this.studentID = studentID;
-    }
+
     public void login(){
         System.out.println("Login method in user class.");
     }
