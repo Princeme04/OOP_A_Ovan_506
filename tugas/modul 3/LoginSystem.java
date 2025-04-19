@@ -4,8 +4,8 @@ public class LoginSystem{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        Adminn admin = new Adminn("Alice", "A001", "admin", "1234");
-        Student student = new Student("Bob", "S123");
+        Adminn admin = new Adminn("Ovan Keyva Kusumadewa", "202410370110506", "admin", "1234");
+        Student student = new Student("Doni", "ABC2");
 
         System.out.println("===== LOGIN SYSTEM =====");
         System.out.println("1. Login as Admin");

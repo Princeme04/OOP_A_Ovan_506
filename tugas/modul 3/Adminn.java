@@ -23,6 +23,8 @@ public class Adminn extends User {
     }
     @Override
     public void displayInfo(){
+        System.out.println("Name: " + getName());
+        System.out.println("Student ID: " + getStudentID());
         System.out.println("Admin " + getName() + " has successfully logged in.");
     }
 }
