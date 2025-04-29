@@ -10,7 +10,7 @@ public class Student extends User{
         System.out.print("Enter student ID: ");
         String inputID = scanner.nextLine();
 
-        if(inputName.equalsIgnoreCase(getName()) && inputID.equalsIgnoreCase(getStudentID())){
+        if(inputName.equalsIgnoreCase(getName()) && inputID.equals(getStudentID())){
             displayInfo();
         }else{
             System.out.println("Login failed! Invalid name or student ID.");

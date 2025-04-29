@@ -1,11 +1,12 @@
-public class NonFiksi extends Buku{
-    public NonFiksi(String title, String author){
+package perpustakaan;
+
+public class NonFiction extends Book{
+    public NonFiction(String title, String author){
         super(title, author);
     }
+
     @Override
-    public void displaInfo(){
-        System.out.println("Fiction Book: ");
-        System.out.println("Title: " + title);
-        System.out.println("Author: " + author)
+    public void displayInfo(){
+        System.out.println("Non-Fiction Book title: " + title + ", Author: " + author);
     }
 }

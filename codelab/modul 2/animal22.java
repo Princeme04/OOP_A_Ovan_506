@@ -2,6 +2,7 @@ public class animal22 {
     String hewan;
     String type;
     String suara;
+
     public animal22(String hewan, String type, String suara){
         this.hewan = hewan;
         this.type = type;

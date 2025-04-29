@@ -21,9 +21,10 @@ public class Adminn extends User {
             System.out.println("Admin login failed. Invalid username or password");
         }
     }
+
     @Override
     public void displayInfo(){
-        System.out.println("Name: " + getName());
+       System.out.println("Name: " + getName());
         System.out.println("Student ID: " + getStudentID());
         System.out.println("Admin " + getName() + " has successfully logged in.");
     }
