@@ -2,6 +2,7 @@ package app;
 
 import perpustakaan.Book;
 import perpustakaan.Fiction;
+import perpustakaan.Member;
 import perpustakaan.NonFiction;
 
 public class MainModul4 {
@@ -13,6 +14,17 @@ public class MainModul4 {
         nonFiction.displayInfo();
 
         System.out.println();
+
+        Member ovan = new Member("Ovan Skywalker", "506");
+        Member viero = new Member("Viero Smith", "423");
+
+        ovan.nameList();
+        viero.nameList();
+
+        ovan.borrowBook("Real");
+        viero.borrowBook("Metamorphosis", 24);
+        ovan.returnBook("Real");
+
     }
 
 }
