@@ -1,4 +1,7 @@
-package com.practicum.users;
+package com.practicum.action;
+
+import java.util.Scanner;
+import com.practicum.users.User;
 
 public class Mahasiswa extends User {
     public Mahasiswa(String name, String studentID){
@@ -6,7 +9,7 @@ public class Mahasiswa extends User {
     }
     @Override
     public void login(){
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter name: ");
         String inputName = scanner.nextLine();
         System.out.print("Enter student ID: ");

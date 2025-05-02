@@ -1,6 +1,7 @@
-package com.practicum.users;
+package com.practicum.action;
 
 import java.util.Scanner;
+import com.practicum.users.User;
 
 public class Admin extends User {
     private final String username;

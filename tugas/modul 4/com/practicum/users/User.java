@@ -1,5 +1,7 @@
 package com.practicum.users;
 
+
+
 public class User {
     private final String name;
     private final String studentID;

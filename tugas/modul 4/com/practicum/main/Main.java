@@ -1,7 +1,7 @@
 package com.practicum.main;
 
 import java.util.Scanner;
-import com.practicum.users.*;
+import com.practicum.action.*;
 
 
 public class Main {
