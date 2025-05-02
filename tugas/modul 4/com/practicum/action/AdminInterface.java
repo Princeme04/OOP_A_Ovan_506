@@ -1,4 +1,4 @@
 package com.practicum.action;
 
-public class AdminInterface {
+public interface AdminInterface {
 }

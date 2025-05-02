@@ -20,10 +20,14 @@ public class MainModul4 {
 
         ovan.nameList();
         viero.nameList();
+        System.out.println();
 
-        ovan.borrowBook("Real");
-        viero.borrowBook("Metamorphosis", 24);
-        ovan.returnBook("Real");
+        ovan.borrowBook(fiction);
+        viero.borrowBook(nonFiction.getTitle(), 24);
+        System.out.println();
+
+        ovan.returnBook(fiction);
+        viero.returnBook(nonFiction);
 
     }
 

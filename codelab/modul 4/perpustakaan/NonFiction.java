@@ -7,6 +7,6 @@ public class NonFiction extends Book{
 
     @Override
     public void displayInfo(){
-        System.out.println("Non-Fiction Book title: " + title + ", Author: " + author);
+        System.out.println("Non-Fiction Book title: " + title + ", Author: " + author + " (Genre: Philosphy, Psychologic)");
     }
 }

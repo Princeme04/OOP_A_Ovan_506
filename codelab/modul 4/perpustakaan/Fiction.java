@@ -7,6 +7,6 @@ public class Fiction extends Book{
 
     @Override
     public void displayInfo(){
-        System.out.println("Fiction Book Title: " + title + ", Author: " + author);
+        System.out.println("Fiction Book Title: " + title + ", Author: " + author + " (Genre: Seinen, Sport, Slice of Life)");
     }
 }

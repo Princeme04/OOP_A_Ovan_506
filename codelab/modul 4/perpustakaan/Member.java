@@ -11,19 +11,20 @@ public class Member implements BookLoan{
     public void nameList(){
         System.out.println("Member: " + name + " ID: " + memberID);
     }
-
-    @Override
     public void borrowBook(String title){
         System.out.println(name + "(" + memberID+ ")" + " borrowed the book " + title);
     }
 
-    @Override
     public void borrowBook(String title, int duration){
         System.out.println(name + "(" + memberID+ ")" + " borrowed the book: " + title + " for " + duration + " days.");
     }
+    @Override
+    public void borrowBook(Book book){
+        System.out.println(name + " just borrowed book: " + book.getTitle());
+    }
 
     @Override
-    public void returnBook(String title){
-        System.out.println(name + "(" + memberID+ ")" + " returned the book: " + title);
+    public void returnBook(Book book){
+        System.out.println(name + "(" + memberID+ ")" + " returned the book: " + book.getTitle());
     }
 }
