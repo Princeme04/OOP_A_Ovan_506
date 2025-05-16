@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class InsufficientStockException {
+public class InsufficientStockException extends Exception {
+    public InsufficientStockException(String message) {
+        super(message);
+    }
 }

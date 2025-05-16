@@ -2,7 +2,7 @@ package com.practicum.users;
 
 
 
-public class User {
+public abstract class User {
     private final String name;
     private final String studentID;
 
@@ -12,7 +12,7 @@ public class User {
     }
 
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
@@ -24,7 +24,14 @@ public class User {
         System.out.println("Overriden");
 
     }
+    public boolean loggedIn = false;
+
+    public boolean isLoggedIn(){
+        return loggedIn;
+    }
+
     public void displayInfo(){
 
     }
+    public abstract void displayAppMenu();
 }

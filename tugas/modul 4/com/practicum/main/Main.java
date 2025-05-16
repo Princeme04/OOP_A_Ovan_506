@@ -1,7 +1,7 @@
 package com.practicum.main;
 
 import java.util.Scanner;
-import com.practicum.action.*;
+import com.practicum.users.*;
 
 
 public class Main {
@@ -20,9 +20,15 @@ public class Main {
         switch(choices){
             case 1:
                 admin.login();
+                if(admin.isLoggedIn() == true){
+                    admin.displayAppMenu();
+                }
                 break;
             case 2:
                 mahasiswa.login();
+                if(mahasiswa.isLoggedIn() == true){
+                    mahasiswa.displayAppMenu();
+                }
                 break;
             case 3:
                 System.out.println("""
