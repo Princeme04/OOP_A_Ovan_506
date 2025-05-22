@@ -9,10 +9,11 @@ public class LoginSystem {
     public static ArrayList<User> userList = new ArrayList<>();
     public static ArrayList<Item> reportedItems = new ArrayList<>();
 
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Seed users
+
         userList.add(new Admin("Ovan", "202410370110506", "admin", "1234"));
         userList.add(new Student("Dina", "ABC3"));
         userList.add(new Student("Melon", "ABC4"));
@@ -26,7 +27,6 @@ public class LoginSystem {
             System.out.print("Choose option: ");
             int choice = getIntInput(scanner);
 
-            // Consume leftover newline
             scanner.nextLine();
 
             switch (choice) {
@@ -88,7 +88,7 @@ public class LoginSystem {
                 return scanner.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("Input must be a number!");
-                scanner.nextLine(); // clear buffer
+                scanner.nextLine();
             }
         }
     }
