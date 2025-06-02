@@ -1,10 +1,10 @@
-package com.practicum.users;
+package com.praktikum.users;
 
-import com.practicum.actions.AdminActions;
-import com.practicum.exceptions.InvalidCredentialsException;
-import com.practicum.models.ItemStatus;
-import com.practicum.storage.GlobalData;
-import com.practicum.models.Item;
+import com.praktikum.exceptions.InvalidCredentialsException;
+import com.praktikum.actions.AdminActions;
+import com.praktikum.models.ItemStatus;
+import com.praktikum.storage.GlobalData;
+import com.praktikum.models.Item;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

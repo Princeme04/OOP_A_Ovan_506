@@ -1,14 +1,14 @@
-package task1.src.main.java.com.practicum.users;
+package com.praktikum.users;
 
-import com.practicum.exceptions.InvalidCredentialsException;
-import com.practicum.actions.MahasiswaActions;
-import com.practicum.models.Item;
-import com.practicum.models.ItemStatus;
-import com.practicum.storage.GlobalData;
+import com.praktikum.exceptions.InvalidCredentialsException;
+import com.praktikum.actions.MahasiswaActions;
+import com.praktikum.models.Item;
+import com.praktikum.models.ItemStatus;
+import com.praktikum.storage.GlobalData;
 
-import java.util.ArrayList;
+import java.util.Scanner;
 
-ublic class Student extends User implements MahasiswaActions {
+public class Student extends User implements MahasiswaActions {
     public Student(String name, String studentID) {
         super(name, studentID);
     }

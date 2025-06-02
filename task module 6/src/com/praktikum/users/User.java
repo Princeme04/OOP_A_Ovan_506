@@ -1,4 +1,4 @@
-package com.practicum.users;
+package com.praktikum.users;
 
 public abstract class User {
     private String name;
